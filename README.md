@@ -3,6 +3,7 @@ This project demonstrates API automation testing using Rest Assured in Java (BDD
 Source code folder:
 src/test/java/apiTest - can be find both runners and step definitions and updated as per the API automation task
 pom and testng-api.xml - also updated as per API task and ready to run(clone and can run straight away).
+feature file to use for API - apiAuthorNameResponseCheck.feature
 
 Target API Endpoint:
 https://openlibrary.org/authors/OL1A.json
