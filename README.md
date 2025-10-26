@@ -13,10 +13,10 @@ https://openlibrary.org/authors/OL1A.json
 Tech Stack:
 
 Language: Java
-Automation Tool: Rest Assured (BDD style)
-Test Framework: TestNG (or JUnit, depending on your setup)
-IDE: IntelliJ IDEA
-Build Tool: Maven/Gradle
+1. Automation Tool: Rest Assured (BDD style)
+2. Test Framework: TestNG
+3. IDE: IntelliJ IDEA
+4. Build Tool: Maven
 
 API Request:
 Method: GET
