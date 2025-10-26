@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="BDD Suite">
     <test name="Motor Vehicle Stamp Duty">
-        <packages>
-            <package name="stampDutyCalSteps"/>
-        </packages>
+        <classes>
+            <class name="runners.TestNGRunner"/>
+        </classes>
     </test>
 </suite>

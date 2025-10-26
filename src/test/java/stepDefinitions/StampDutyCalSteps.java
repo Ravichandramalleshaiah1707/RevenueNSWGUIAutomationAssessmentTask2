@@ -25,6 +25,7 @@ public class StampDutyCalSteps extends Browser {
         serviceNSWHomePage = new ServiceNSWHomePage(Browser.getDriver());
         driver = Browser.getDriver();
         driver.get("https://www.service.nsw.gov.au/transaction/check-motor-vehicle-stamp-duty");
+        System.out.println("User is on Service NSW Home page - Check Motor vehicle stamp duty page");
 
     }
 
@@ -32,31 +33,35 @@ public class StampDutyCalSteps extends Browser {
     public void clickCheckOnlineButton()
     {
        serviceNSWHomePage.clickCheckOnlineButton();
+       System.out.println("User clicked on Check online button");
        revenueNSWCalculatorPage = new RevenueNSWCalculatorPage(driver);
     }
 
     @Then("user navigated to Revenue NSW Calculator page")
     public void userNavigatedToRevenueNSWCalculator()
     {
-        System.out.println("user navigated to NSW Calculator Page");
+        System.out.println("user navigated to Revenue NSW Calculator Page");
     }
 
     @When("select {string} checkbox for the passenger vehicle option")
     public void clickYesCheckBox(String option)
     {
        revenueNSWCalculatorPage.selectYesCheckBox(option);
+       System.out.println("Selected Yes option");
     }
 
     @And("enter the purchase price as {string}")
     public void enterPurchasePrice(String amount)
     {
         revenueNSWCalculatorPage.enterPurchasePrice(amount);
+        System.out.println("Entered the Purchase price of the vehicle");
     }
 
     @And("click on \"Calculate\" button")
     public void clickOnCalculateButton()
     {
         revenueNSWCalculatorPage.clickCalculateButton();
+        System.out.println("User clicked on Calculate button");
     }
 
     @Then("user should see the popup along with the correct details")
@@ -80,9 +85,11 @@ public class StampDutyCalSteps extends Browser {
         System.out.flush();
     }
 
+    //closing popup and as well as browser
     @And("click on \"Close\" button")
     public void clickCloseButton()
     {
         revenueNSWCalculatorPage.closeButton();
+        Browser.closeDriver();
     }
 }

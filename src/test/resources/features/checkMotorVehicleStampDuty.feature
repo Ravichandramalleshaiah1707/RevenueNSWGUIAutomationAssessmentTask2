@@ -1,6 +1,6 @@
 Feature: Verify Motor Vehicle Stamp Duty Calculation in Service NSW site
 
-  Scenario:check online stamp duty calculation
+  Scenario: check online stamp duty calculation
     Given launch the Service NSW Motor Vehicle Stamp Duty page
     When click on "Check online" button
     Then user navigated to Revenue NSW Calculator page

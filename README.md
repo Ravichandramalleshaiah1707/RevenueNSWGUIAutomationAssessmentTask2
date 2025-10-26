@@ -3,23 +3,6 @@ Overview
 This project automates the Vehicle Stamp Duty Calculator on Service NSW using Selenium WebDriver, Cucumber (BDD), and TestNG.
 It demonstrates GUI automation, Page Object Model (POM), and data-driven testing via feature files and properties.
 
-Project Structure
-
-project-root/
-│
-├─ .gitignore
-├─ pom.xml
-├─ src/
-│  ├─ main/java/
-│  │   ├─ features/           # Cucumber feature file
-│  │   ├─ pageobjects/        # Page Object classes 
-│  │   └─ utilities/           # Browser and weblocator reader class
-│  └─ test
-|      |java/stepdefinitions    # Step definition class
-│      ├─ resources/           # properties file (locators)
-│      └─ runners/             # TestNG runner classes
-└─ README.md
-
 
 Prerequisites
 Java JDK 11 or higher

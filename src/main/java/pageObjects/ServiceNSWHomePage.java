@@ -25,7 +25,7 @@ public class ServiceNSWHomePage {
         checkOnlinebutton.click();
 
         wait.until(ExpectedConditions.urlContains("apps09.revenue.nsw.gov.au"));
-        System.out.println("Navigated to new page: " + driver.getCurrentUrl());
+        //System.out.println("Navigated to new page: " + driver.getCurrentUrl());
 
         }
     }

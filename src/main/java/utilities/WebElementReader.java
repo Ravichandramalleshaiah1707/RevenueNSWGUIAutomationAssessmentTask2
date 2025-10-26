@@ -14,7 +14,7 @@ public class WebElementReader {
                 throw new RuntimeException("Locator file not found: " + fileName);
             }
             else {
-                System.out.println("Successfully loaded file" + fileName);
+               // System.out.println("Data property file used: " + fileName);
                 properties.load(input);
             }
         } catch (Exception e) {
